@@ -25,6 +25,9 @@ export function getTranslation(lang: string): Translation {
 }
 
 export function i18n(key: I18nKey): string {
-	const lang = siteConfig.lang || "en";
-	return getTranslation(lang)[key];
+	const userLang =
+		typeof window !== "undefined"
+			? localStorage.getItem("lang") || siteConfig.lang || "en"
+			: siteConfig.lang || "en";
+	return getTranslation(userLang)[key];
 }

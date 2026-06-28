@@ -2,31 +2,10 @@
 import { Icon } from "astro-icon/components";
 
 import { LinkPresets } from "../../../constants/link-presets";
-import I18nKey from "../../../i18n/i18nKey";
-import { i18n } from "../../../i18n/translation";
 import { url } from "../../../utils/url-utils";
 import type { DropdownMenuProps } from "./types";
 
 const { link, class: className } = Astro.props as DropdownMenuProps;
-
-const navTitleMap: Record<string, I18nKey> = {
-	Links: I18nKey.navLinks,
-	My: I18nKey.navMy,
-	About: I18nKey.navAbout,
-	Others: I18nKey.navOthers,
-	Anime: I18nKey.anime,
-	Diary: I18nKey.diary,
-	Gallery: I18nKey.albums,
-	Devices: I18nKey.devices,
-	Projects: I18nKey.projects,
-	Skills: I18nKey.skills,
-	Timeline: I18nKey.timeline,
-	Friends: I18nKey.friends,
-};
-
-const getLocalizedName = (name: string): string => {
-	return name in navTitleMap ? i18n(navTitleMap[name]) : name;
-};
 
 const children =
 	link.children?.map((child) =>
@@ -53,7 +32,7 @@ const hasChildren = children.length > 0;
 						/>
 					)}
 					<span class="truncate hidden lg:inline">
-						{getLocalizedName(link.name)}
+						{link.name}
 					</span>
 					<Icon
 						name="material-symbols:keyboard-arrow-down-rounded"
@@ -84,7 +63,7 @@ const hasChildren = children.length > 0;
 											class="text-[1rem] mr-2"
 										/>
 									)}
-									<span>{getLocalizedName(child.name)}</span>
+									<span>{child.name}</span>
 								</div>
 								{child.external && (
 									<Icon
@@ -112,7 +91,7 @@ const hasChildren = children.length > 0;
 					/>
 				)}
 				<span class="truncate hidden lg:inline">
-					{getLocalizedName(link.name)}
+					{link.name}
 				</span>
 				{link.external && (
 					<Icon

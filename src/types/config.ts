@@ -216,7 +216,7 @@ export interface NavBarConfig {
 export interface ProfileConfig {
 	avatar?: string;
 	name: string;
-	bio?: string;
+	bio?: string | string[];
 	links: {
 		name: string;
 		url: string;

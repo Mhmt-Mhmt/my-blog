@@ -2,34 +2,9 @@
 import { Icon } from "astro-icon/components";
 
 import { LinkPresets } from "../../../constants/link-presets";
-import I18nKey from "../../../i18n/i18nKey";
-import { i18n } from "../../../i18n/translation";
 import type { LinkPreset, NavBarLink } from "../../../types/config";
 import { url } from "../../../utils/url-utils";
 import type { NavMenuPanelProps, ProcessedNavBarLink } from "./types";
-
-const navTitleMap: Record<string, string> = {
-	Links: I18nKey.navLinks,
-	My: I18nKey.navMy,
-	About: I18nKey.navAbout,
-	Others: I18nKey.navOthers,
-	Anime: I18nKey.anime,
-	Diary: I18nKey.diary,
-	Gallery: I18nKey.albums,
-	Devices: I18nKey.devices,
-	Projects: I18nKey.projects,
-	Skills: I18nKey.skills,
-	Timeline: I18nKey.timeline,
-	Friends: I18nKey.friends,
-};
-
-const getLocalizedName = (name: string): string => {
-	const keyValue = navTitleMap[name];
-	if (keyValue) {
-		return i18n(keyValue as I18nKey);
-	}
-	return name;
-};
 
 const processedLinks: ProcessedNavBarLink[] = (
 	Astro.props as NavMenuPanelProps
@@ -72,7 +47,7 @@ const processedLinks: ProcessedNavBarLink[] = (
 										class="text-[1.1rem] mr-2"
 									/>
 								)}
-								{getLocalizedName(link.name)}
+								{link.name}
 							</div>
 							<Icon
 								name="material-symbols:keyboard-arrow-down-rounded"
@@ -98,7 +73,7 @@ const processedLinks: ProcessedNavBarLink[] = (
 												class="text-[1.1rem] mr-2"
 											/>
 										)}
-										{getLocalizedName(child.name)}
+										{child.name}
 									</div>
 									{child.external && (
 										<Icon
@@ -125,7 +100,7 @@ const processedLinks: ProcessedNavBarLink[] = (
 									class="text-[1.1rem] mr-2"
 								/>
 							)}
-							{getLocalizedName(link.name)}
+							{link.name}
 						</div>
 						{!link.external && (
 							<Icon

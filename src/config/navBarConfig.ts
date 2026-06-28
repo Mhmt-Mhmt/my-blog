@@ -133,27 +133,28 @@ export const navBarConfig: NavBarConfig = {
 		// 预设链接：归档
 		LinkPreset.Archive,
 
+
 		// 自定义一级下拉菜单示例：外部链接集合
 		{
-			name: "Links",
+			name: "链接",
 			url: "/links/",
 			icon: "material-symbols:link",
 			children: [
 				{
 					name: "GitHub",
-					url: "https://github.com/LyraVoid/Mizuki",
+					url: "https://github.com/Mhmt-Mhmt",
 					external: true, // 外部链接，新标签页打开
 					icon: "fa7-brands:github",
 				},
 				{
 					name: "Bilibili",
-					url: "https://space.bilibili.com/701864046",
+					url: "https://space.bilibili.com/1647126462",
 					external: true,
 					icon: "fa7-brands:bilibili",
 				},
 				{
 					name: "Gitee",
-					url: "https://gitee.com/matsuzakayuki/Mizuki",
+					url: "https://gitee.com/Mhmt",
 					external: true,
 					icon: "mdi:git",
 				},
@@ -162,27 +163,27 @@ export const navBarConfig: NavBarConfig = {
 
 		// 自定义一级下拉菜单示例：个人内容页面
 		{
-			name: "My",
+			name: "我的",
 			url: "/content/",
 			icon: "material-symbols:person",
 			children: [
 				{
-					name: "Anime",
+					name: "番剧",
 					url: "/anime/",
 					icon: "material-symbols:movie",
 				},
 				{
-					name: "Diary",
+					name: "日记",
 					url: "/diary/",
 					icon: "material-symbols:book",
 				},
 				{
-					name: "Gallery",
+					name: "相册",
 					url: "/albums/",
 					icon: "material-symbols:photo-library",
 				},
 				{
-					name: "Devices",
+					name: "设备",
 					url: "/devices/",
 					icon: "material-symbols:devices",
 					external: false, // 内部链接，当前页导航
@@ -192,17 +193,17 @@ export const navBarConfig: NavBarConfig = {
 
 		// 自定义一级下拉菜单示例：关于相关
 		{
-			name: "About",
+			name: "关于",
 			url: "/content/",
 			icon: "material-symbols:info",
 			children: [
 				{
-					name: "About",
+					name: "关于",
 					url: "/about/",
 					icon: "material-symbols:person",
 				},
 				{
-					name: "Friends",
+					name: "友链",
 					url: "/friends/",
 					icon: "material-symbols:group",
 				},
@@ -211,22 +212,22 @@ export const navBarConfig: NavBarConfig = {
 
 		// 自定义一级下拉菜单示例：其他页面
 		{
-			name: "Others",
+			name: "其他",
 			url: "#", // "#" 作为占位 URL，点击不会跳转
 			icon: "material-symbols:more-horiz",
 			children: [
 				{
-					name: "Projects",
+					name: "项目",
 					url: "/projects/",
 					icon: "material-symbols:work",
 				},
 				{
-					name: "Skills",
+					name: "技能",
 					url: "/skills/",
 					icon: "material-symbols:psychology",
 				},
 				{
-					name: "Timeline",
+					name: "时间线",
 					url: "/timeline/",
 					icon: "material-symbols:timeline",
 				},

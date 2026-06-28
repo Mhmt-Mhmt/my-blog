@@ -24,7 +24,7 @@ const title = i18n(I18nKey.about);
 		import("../scripts/right-sidebar-layout.js");
 	</script>
 	<div
-		class="flex w-full rounded-(--radius-large) overflow-hidden relative min-h-32"
+		class="flex w-full rounded-(--radius-large) overflow-hidden relative min-h-32 page-about"
 	>
 		<div class="card-base z-10 px-9 py-6 relative w-full">
 			<PageHeader title={title} />
@@ -40,3 +40,51 @@ const title = i18n(I18nKey.about);
 		<Comment path="/about/" />
 	</div>
 </MainGridLayout>
+
+<style is:global>
+	/* 关于页图片 - 默认缩略图，点击展开 */
+	.page-about .card-base img {
+		max-width: 200px;
+		max-height: 120px;
+		object-fit: cover;
+		cursor: pointer;
+		border-radius: 8px;
+		border: 2px solid var(--primary);
+		opacity: 0.85;
+		transition: all 0.3s ease;
+		display: block;
+		margin: 8px 0;
+	}
+
+	.page-about .card-base img:hover {
+		opacity: 1;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+	}
+
+	.page-about .card-base img.img-expanded {
+		max-width: 100%;
+		max-height: none;
+		object-fit: contain;
+		opacity: 1;
+		border-color: var(--primary);
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+	}
+</style>
+
+<script>
+	(function initAboutImageToggle() {
+		const container = document.querySelector(".page-about .card-base");
+		if (!container) return;
+
+		const imgs = container.querySelectorAll("img");
+		imgs.forEach((img) => {
+			img.addEventListener("click", function (e) {
+				e.stopPropagation();
+				this.classList.toggle("img-expanded");
+			});
+			img.addEventListener("mouseleave", function () {
+				this.classList.remove("img-expanded");
+			});
+		});
+	})();
+</script>

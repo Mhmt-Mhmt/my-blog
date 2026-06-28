@@ -253,6 +253,7 @@ onDestroy(() => {
 			: 'btn-plain active:scale-90'}
             {isDesktopSearchExpanded ? 'w-48' : 'w-11'}"
 		aria-label="Search"
+		title="搜索"
 		onmouseenter={() => {
 			if (!isDesktopSearchExpanded) {
 				toggleDesktopSearch();

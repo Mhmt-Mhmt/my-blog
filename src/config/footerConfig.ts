@@ -2,9 +2,9 @@ import type { FooterConfig } from "../types/config";
 
 // 页脚配置
 export const footerConfig: FooterConfig = {
-	enable: false, // 是否启用Footer HTML注入功能
-	customHtml: "", // HTML格式的自定义页脚信息，例如备案号等，默认留空
-	// 也可以直接编辑 FooterConfig.html 文件来添加备案号等自定义内容
-	// 注意：若 customHtml 不为空，则使用 customHtml 中的内容；若 customHtml 留空，则使用 FooterConfig.html 文件中的内容
-	// FooterConfig.html 可能会在未来的某个版本弃用
+	enable: true,
+	customHtml: `<div style="text-align: center; padding: 1rem 0;">
+  <p>© 2026 穆哈麦提·麦合木提. All rights reserved.</p>
+  <p style="font-size: 0.85rem; opacity: 0.7;">水利工程 + 软件开发复合背景 · 用技术解决行业实际问题</p>
+</div>`,
 };

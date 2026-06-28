@@ -176,6 +176,18 @@ const bannerOffset =
 			})();
 		</script>
 
+		<!-- 语言初始化脚本 - 在页面渲染前设置语言 -->
+		<script is:inline>
+			(function() {
+				try {
+					var lang = localStorage.getItem("lang");
+					if (lang) {
+						document.documentElement.lang = lang.replace(/_/g, "-");
+					}
+				} catch(e) {}
+			})();
+		</script>
+
 		<!-- 第三方分析脚本 -->
 		<AnalyticsScripts
 			thirdPartyAnalytics={siteConfig.thirdPartyAnalytics}

@@ -1,49 +1,100 @@
+# 👋 你好，我是穆哈麦提·麦合木提
 
-This website is built with the **Astro** framework using the [Mizuki](https://github.com/LyraVoid/Mizuki) theme.
-
-::github{repo="LyraVoid/Mizuki"}
-
-## 🌟 Theme Features
-
-### 🎨 Design & User Experience
-- **Modern & Elegant Design** - Clean, minimalist interface with beautiful typography
-- **Fully Responsive** - Optimized for all devices from mobile to desktop
-- **Dark/Light Mode** - Automatic theme switching with smooth transitions
-- **Beautiful Typography** - Enhanced readability with JetBrains Mono font
-- **Smooth Animations** - Fluid page transitions and interactive elements
-
-### 🔍 Content & Search
-- **Advanced Search** - Powered by [Pagefind](https://pagefind.app/) for fast, accurate results
-- **Enhanced Markdown** - Extended syntax with code highlighting and math support
-- **Interactive Table of Contents** - Auto-scroll navigation for long articles
-- **RSS Feed Generation** - Stay updated with automatic feed generation
-- **Reading Time Estimation** - Know how long articles take to read
-- **Post Categorization** - Organize content with tags and categories
-
-
-
-### 📱 Special Pages
-- **Anime Tracking Page** - Track your anime watching progress with ratings
-- **Friends Links Page** - Showcase friend websites with beautiful cards
-- **Diary/Moments Page** - Share life moments like social media posts
-- **Archive Page** - Organized timeline view of all posts
-- **About Page** - Customizable personal introduction (this page!)
-
-### 🛠 Technical Features
-- **Enhanced Code Blocks** - Powered by [Expressive Code](https://expressive-code.com/)
-- **Math Support** - LaTeX rendering with KaTeX for mathematical expressions
-- **Image Optimization** - PhotoSwipe gallery with lazy loading
-- **SEO Optimized** - Built-in sitemap and meta tags for better search visibility
-- **Performance Optimized** - Fast loading with caching and optimization
-- **Comment System Ready** - Integration support for Twikoo comments
-
-### 🎯 Advanced Markdown Features
-- **Callouts & Admonitions** - Beautiful info boxes with `> [!NOTE]`, `> [!TIP]`, `> [!WARNING]`
-- **Mathematical Equations** - Write LaTeX math with `$inline$` and `$$block$$` syntax
-- **GitHub Cards** - Embed repository cards with `::github{repo="user/repo"}`
-- **Syntax Highlighting** - Advanced code highlighting with line numbers
-- **Copy Code Buttons** - Easy code copying functionality
+欢迎来到我的个人小站！我是一名 **水文与水资源工程** 专业出身，却一头扎进 **软件开发** 世界的"跨界选手"。水利工程给了我严谨的逻辑思维，代码则赋予我无限的创造力。
 
 ---
 
-*Built with ❤️ using Astro and inspired by modern web design principles.*
+## 🚀 关于我
+
+```yaml
+姓名: 穆哈麦提·麦合木提
+专业: 水文与水资源工程
+学校: 太原理工大学 (211)
+标签: [水利人, 开发者, 科幻迷, 终身学习者]
+技能树: Python · Flask · PySide6 · Vue3 · LangChain · AI/LLM
+```
+
+从大一开始自学编程，逐渐从"用 Python 算数据"走向"用代码构建完整的业务系统"。先后为大唐陕西发电有限公司、山西省水利水电勘测设计研究院等企业开发了多套真实落地的水利信息化系统。2023 年还拿下了全国大学生机器人格斗大赛的国家级一等奖 🏆
+
+现在，我致力于用技术解决水利领域的实际问题，同时也热衷于探索 AI 大模型、RAG 等前沿技术。**水利是信仰，代码是武器——这就是我的"跨界"人生。**
+
+---
+
+## 📜 证书与荣誉
+
+### 🏅 全国大学生机器人格斗大赛 · 国家级一等奖
+
+> 作为核心成员负责机器人核心运动控制算法的开发与调试，与团队一起斩获国家级一等奖。
+
+▶️ [查看证书 PDF](/certificates/机器人证书.pdf)
+
+![全国大学生机器人格斗大赛一等奖](/certificates/机器人证书.jpg)
+
+### 📄 国家计算机软件著作权
+
+> 「大唐旬阳水力发电厂水库调度辅助决策系统」获得国家版权局颁发的计算机软件著作权登记证书。
+
+▶️ [查看证书 PDF](/certificates/软件著作权.pdf)
+
+![计算机软件著作权证书](/certificates/软件著作权.jpg)
+
+### ⭐ "五小"创新大赛三等奖
+
+> 参与的调洪软件项目获得山西省农林水系统"五小"创新大赛三等奖。
+
+![五小三等奖](/certificates/wuxiao-third-prize.jpg)
+
+---
+
+## 🛠️ 技能一览
+
+| 类别         | 技能                          |
+| ------------ | ----------------------------- |
+| **编程语言** | Python (主力), JavaScript, C  |
+| **后端框架** | Flask, LangChain, SQLAlchemy  |
+| **前端技术** | Vue3, ECharts, JavaScript     |
+| **桌面开发** | PySide6, qfluentwidgets       |
+| **数据处理** | Pandas, NumPy, Scikit-learn   |
+| **数据库**   | SQLServer, SQLite, ChromaDB   |
+| **工具**     | Git, Docker, PyCharm, VS Code |
+| **专业软件** | ArcGIS, AutoCAD               |
+
+更多详细信息请移步 [技能](/skills/) 页面 →
+
+---
+
+## 💼 参与的项目
+
+- **旬阳水力发电厂水库调度辅助决策系统** — Flask + Vue3 全栈开发，已获软件著作权
+- **调洪计算系统** — PySide6 桌面端，已交付山西省水利水电勘测设计研究院
+- **径流调节计算系统** — PySide6 桌面端，已交付山西省水利水电勘测设计研究院
+- **基于大模型的智能水利专家系统 (Agent_RAG)** — LangChain + ChromaDB + Qwen3
+- **简历智能分析与评分系统** — Vue3 + Flask + Scikit-learn
+
+查看完整项目列表请移步 [项目](/projects/) 页面 →
+
+---
+
+## 📚 教育经历
+
+**太原理工大学** (211) · 水文与水资源工程 · 2021-2025
+
+---
+
+## 🌌 爱好
+
+我是一个不折不扣的 **科幻迷** 🛸 喜欢看科幻电影、读科幻小说，从《三体》到《沙丘》，从《星际穿越》到《银翼杀手》——那些关于未来、宇宙和技术的想象总能让我兴奋不已。
+
+除了编程和科幻，我还喜欢研究各种新技术，折腾开源项目，以及偶尔打打游戏。
+
+---
+
+## 📬 联系我
+
+- **GitHub**: [Mhmt-Mhmt](https://github.com/Mhmt-Mhmt)
+- **Gitee**: [Mhmt](https://gitee.com/Mhmt)
+- **Email**: [1272167775@qq.com](mailto:1272167775@qq.com)
+
+---
+
+*本站基于 [Mizuki](https://github.com/LyraVoid/Mizuki) 主题构建。*
