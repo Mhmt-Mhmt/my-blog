@@ -1,7 +1,7 @@
 ---
 title: Markdown Extended Features
-published: 2024-05-01
-updated: 2024-11-29
+published: 2026-06-28
+updated: 2026-06-28
 description: 'Read more about Markdown features in Mizuki'
 image: ''
 tags: [Demo, Example, Markdown, Mizuki]

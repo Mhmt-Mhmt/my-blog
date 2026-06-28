@@ -1,6 +1,6 @@
 ---
 title: Simple Guides for Mizuki
-published: 2024-04-01
+published: 2026-06-28
 description: "How to use this blog template."
 image: "./cover.webp"
 tags: ["Mizuki", "Blogging", "Customization"]
