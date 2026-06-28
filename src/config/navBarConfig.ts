@@ -210,6 +210,13 @@ export const navBarConfig: NavBarConfig = {
 			],
 		},
 
+		// 管理后台
+		{
+			name: "管理",
+			url: "/admin/",
+			icon: "material-symbols:settings",
+		},
+
 		// 自定义一级下拉菜单示例：其他页面
 		{
 			name: "其他",

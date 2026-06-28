@@ -1,0 +1,23 @@
+name = "mizuki"
+compatibility_date = "2024-12-01"
+compatibility_flags = ["nodejs_compat"]
+
+# D1 数据库 - 存储文章内容
+# 部署前需要在 Cloudflare Dashboard 创建:
+#   npx wrangler d1 create mizuki-db
+# 然后将 database_id 填入下面
+[[d1_databases]]
+binding = "DB"
+database_name = "mizuki-db"
+database_id = "CHANGE_ME"  # 创建后替换
+
+# R2 存储桶 - 存储上传的文件/图片
+# 部署前需要在 Cloudflare Dashboard 创建:
+#   npx wrangler r2 bucket create mizuki-files
+[[r2_buckets]]
+binding = "FILES"
+bucket_name = "mizuki-files"
+
+# 环境变量
+[vars]
+ADMIN_PASSWORD = "CHANGE_ME"  # 管理后台密码，部署前修改
