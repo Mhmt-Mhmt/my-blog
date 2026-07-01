@@ -9,7 +9,7 @@ compatibility_flags = ["nodejs_compat"]
 [[d1_databases]]
 binding = "DB"
 database_name = "mizuki-db"
-database_id = "CHANGE_ME"  # 创建后替换
+database_id = "626dd1dc-1461-46fa-8e97-270c602b5fae"
 
 # R2 存储桶 - 存储上传的文件/图片
 # 部署前需要在 Cloudflare Dashboard 创建:
