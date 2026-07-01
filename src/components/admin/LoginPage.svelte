@@ -41,7 +41,7 @@
     <h2>管理后台</h2>
     <p class="subtitle">请输入管理员密码</p>
 
-    <form {onsubmit}>
+    <form onsubmit={handleSubmit}>
       {#if error}
         <div class="error-msg">{error}</div>
       {/if}
@@ -73,7 +73,7 @@
     background: white;
     padding: 2.5rem;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     width: 100%;
     max-width: 380px;
   }
